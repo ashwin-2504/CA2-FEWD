@@ -67,3 +67,6 @@ Now, dive in and see how fast and accurately you can type! 🚀 💻
 
    c. https://pixabay.com/music/search/hacker/
 
+
+
+# Note - As I have so many assets after making the zip file it is not uploading on github as it is showing the file should be less than 25 Mb. So i am not makinga a zip
