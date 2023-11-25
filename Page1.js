@@ -1,39 +1,24 @@
-const backgroundSound = new Audio("./soundbgm2.mp3");
-backgroundSound.play()
-backgroundSound.loop = true;
+document.addEventListener('DOMContentLoaded', function () {
+
+    var instructionBox = document.querySelector('.instructionbox');
+    var instructionDescription = document.querySelector('.instructionDescription .text1');
+
+    var aboutBox = document.querySelector('.aboutbox');
+    var aboutDescription = document.querySelector('.aboutDescription .text2');
 
 
-// const nextButton = document.getElementById("nextButton");
-// const clickSound = new Audio("./button.mp3"); 
+    instructionDescription.style.display = 'none';
+    aboutDescription.style.display = 'none';
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const instructionsBox = document.getElementById("instrutionbox");
-    const aboutBox = document.getElementById("aboutbox");
-    const instructionsContent = document.querySelector(".instructions");
-    const aboutContent = document.querySelector(".about");
+    instructionBox.addEventListener('click', function () {
 
-
-    instructionsContent.style.display = "none";
-    aboutContent.style.display = "none";
-
-    instructionsBox.addEventListener("click", function () {
-        instructionsContent.style.display = instructionsContent.style.display === "none" ? "block" : "none";
-        aboutContent.style.display = "none"; 
+        instructionDescription.style.display = instructionDescription.style.display === 'none' ? 'block' : 'none';
     });
 
-    
 
-    aboutBox.addEventListener("click", function () {
-        aboutContent.style.display = aboutContent.style.display === "none" ? "block" : "none";
-        instructionsContent.style.display = "none"; 
+    aboutBox.addEventListener('click', function () {
+
+        aboutDescription.style.display = aboutDescription.style.display === 'none' ? 'block' : 'none';
     });
 });
-
-
-
-
-
-
-
-

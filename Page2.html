@@ -17,21 +17,20 @@
             <form action="Page3.html" method="get" class="container2">
             <div class="username">
                 <h1>User Name</h1>
-                <input required type="text" placeholder="   Enter...">
+                <input required type="text" id="userNameInput" pattern="[A-Za-z]+" placeholder="   Enter...">
             </div>
             <br>
             <br>
             <div class="nickname">
                 <h1>Nick Name</h1>
-                <input required type="text" placeholder="   Enter...">
+                <input required type="text" id="nickNameInput" pattern="[A-Za-z]+"placeholder="   Enter...">
             </div>
         </div>
     </div>
     <div class="start1">
-        <a href="Page3.html"><button>Start</button></a>
+        <a href="Page3.html"><button onclick="saveData()">Start</button></a>
     </form>
         <script src="Page2.js"> </script>
     </div>
 </body>
-
 </html>

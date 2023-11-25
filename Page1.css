@@ -3,77 +3,112 @@
     padding: 0;
 }
 
-body {
-    background-image: url("./Untitled\ design.png");
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width: 100%;
+body{
+    background-image: url("Untitled\ design.png");
     height: 100%;
-}
-
-
-
-.container2{
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    margin-top: 280px;
-    margin-left: 80px;
-    gap: 90px;
-}
-
-.box{
-    border: 5px solid #00B934;
-    border-radius: 10px;
-    padding: 10px 5px;
-    color: white;
-    transition: 100ms linear;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .logo{
-    position: absolute;
+    /* border: 2px solid white; */
     display: flex;
-    margin: -100px 350px;
+    justify-content: center;
 
 }
 
-.instructions{
-    position: absolute;
-    color: white;
-    border-radius: 10px;
-    border: 5px solid #00B934;
+.logo h1{
+    font-size: 130px;
+    color: rgb(0, 255, 17);
+}
+
+.maincontainer{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    height: 270px;
     margin-top: 150px;
-    margin-left: -600px;
-    padding: 20px 10px;
+}
+.instruction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    /* border: 2px solid rgb(34, 255, 0); */
+    color: white;
+}
 
+.instructionbox{
+    border: 5px solid rgb(0, 255, 21);
+    width: 280px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    transition:all 300ms;
+    cursor: pointer;
 
 }
 
+.instructionbox:hover{
+    color: rgb(0, 255, 34);
+    border: 5px solid rgb(255, 255, 255);
+    transform: scale(1.2);
 
-
+}
 
 .about{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    /* border: 2px solid rgb(34, 255, 0); */
     color: white;
-    border-radius: 10px;
-    border: 5px solid #00B934;
-    margin-top: 150px;
-    margin-left: 600px;
-    padding: 40px 10px;
+}
 
+.aboutbox{
+    border: 5px solid rgb(0, 255, 21);
+    width: 380px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    transition:all 300ms;
+    cursor: pointer;
 
 }
 
+.aboutbox:hover{
+    color: rgb(0, 255, 34);
+    border: 5px solid rgb(255, 255, 255);
+    transform: scale(1.2);
+
+}
+.text1{
+    border: 5px solid rgb(13, 255, 0);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.text2{
+    border: 5px solid rgb(13, 255, 0);
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 60px;
+
+}
+
+
 .next1{
-    position: absolute;
-    z-index: 3;
     color: aliceblue;
     display: flex;
     align-items: end;
-    height: 90%;
-    margin-left: 1200px;
+    display: flex;
+    width: 96%;
+    justify-content: end;
+    margin-top: 90px;
 }
 
 .next1 button{
@@ -96,79 +131,38 @@ body {
 }
 
 
-.box:hover{
-    color: #00B934;
-    border: 5px solid white;
-    background-color: black;
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
-
-
-
-
 @media only screen and (max-width: 800px) and (min-width: 300px){
     
-    
-    .container2{
-        /* position: absolute; */
-        z-index: 1;
-        display: flex;
-        justify-content: space-evenly;
-        width: 90%;
-        margin-left: 400px;
-        margin-top: 900px;
-        gap: 390px;
+    .logo h1{
+        font-size: 55px;
     }
     
-    
-    .logo img{
-        width: 800px;
-        height: 800px;
-        margin-top: 100px;
-        margin-left: -130px;
+    .maincontainer{
+        height: 370px;
     }
     
-    .instructions{
-        position: absolute;
-        color: white;
-        border-radius: 10px;
-        border: 5px solid #00B934;
-    }
-    
-    
-    
-    .about{
-        position: absolute;
-        color: white;
-        width: 55%;
-        border-radius: 10px;
-        /* border: 5px solid #00B934; */
-        /* margin-top: 150px; */
-        /* margin-left: 600px; */
+    .instructionbox{
+        width: 130px;
+        font-size: 12px;
     
     }
+    
+    .aboutbox{
+        width: 150px;
+        font-size: 12px;
+    }
+
+    
+    .text2{
+        padding-bottom: 128px;
+    
+    }
+    
     
     .next1{
-        position: absolute;
-        z-index: 3;
-        color: aliceblue;
-        display: flex;
-        align-items: end;
-        height: 90%;
-        margin-left: 1000px;
-        margin-top: 1300px;
-        width: 200px;
-    }
-    
-    .next1 button{
-        width: 180px;
-        height: 100px;
-        font-size: 60px;
-        margin:-500px;
+        justify-content: center;
+        margin-top: 110px;
     }
 
 
-    
 }
