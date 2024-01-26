@@ -11,13 +11,13 @@
 
 
 var messages = [
-    "Great job!",
-    "Well done!",
-    "Awesome!",
-    "Keep it up!",
+  "Great job!",
+  "Well done!",
+  "Awesome!",
+  "Keep it up!",
 ];
 
-nickname=localStorage.getItem("nickName")
+nickname = localStorage.getItem("nickName")
 
 var randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
