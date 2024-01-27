@@ -208,6 +208,7 @@ body {
   font-family: 'Rubik Glitch Pop', system-ui;
   text-align: center;
   font-size: 40px;
+  text-decoration: underline dashed;
 }
 
 .main_container {
@@ -227,6 +228,11 @@ body {
 .instruction_box {
   font-size: 40px;
   font-weight: 700;
+  text-align: center;
+}
+
+.instruction_description {
+  text-align: center;
 }
 
 .about {
@@ -239,6 +245,11 @@ body {
 .about_box {
   font-size: 40px;
   font-weight: 700;
+  text-align: center;
+}
+
+.about_description {
+  text-align: center;
 }
 
 .play {
@@ -253,7 +264,12 @@ body {
   background-color: var(--bg-clr);
   border: 2.5px solid #1b7e58;
   color: whitesmoke;
-  font-weight: 600;
+  font-weight: 1000;
   letter-spacing: 5px;
   cursor: pointer;
+}
+
+.play button:hover {
+  background-color: #1b7e58;
+  color: var(--bg-clr);
 }
