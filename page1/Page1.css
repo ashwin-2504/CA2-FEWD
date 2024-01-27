@@ -1,10 +1,17 @@
+{/*:root {
+  --primary-color: rgb(0, 255, 17);
+  --secondary-color: rgb(0, 255, 21);
+
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+
 body {
-  background-image: url("media/Untitled design.png");
+  background-image: url("../media/bgpage.png");
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -13,7 +20,7 @@ body {
 }
 
 .logo {
-  /* border: 2px solid white; */
+  -----border: 2px solid white;----
   display: flex;
   justify-content: center;
 
@@ -25,7 +32,7 @@ body {
 }
 
 .maincontainer {
-  /* border: 2px solid red; */
+  ------border: 2px solid red; ------
   display: flex;
   justify-content: space-around;
   height: 270px;
@@ -37,7 +44,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  /* border: 2px solid rgb(34, 255, 0); */
+  ------border: 2px solid rgb(34, 255, 0); ------
   color: white;
 }
 
@@ -65,7 +72,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  /* border: 2px solid rgb(34, 255, 0); */
+  ------border: 2px solid rgb(34, 255, 0); ------
   color: white;
 }
 
@@ -167,4 +174,86 @@ body {
   }
 
 
+}
+*/
+
+
+}
+/*---------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
+
+* {
+  /*border: 2px solid red;*/
+}
+
+html {
+  display: flex;
+}
+
+:root {
+  --text-clr: #dedede;
+  --bg-clr: #0a0a0a;
+}
+
+body {
+  background-color: var(--bg-clr);
+  height: 100%;
+  width: 100%;
+  color: var(--text-clr);
+}
+
+.logo {
+  display: block;
+  font-family: 'Rubik Glitch Pop', system-ui;
+  text-align: center;
+  font-size: 40px;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  column-gap: 120px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.instruction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: left;
+  font-weight: 400;
+}
+
+.instruction_box {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.about {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: left;
+  font-weight: 400;
+}
+
+.about_box {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.play {
+  /*border: 2px dotted red;*/
+  display: flex;
+  justify-content: center;
+}
+
+.play button {
+  height: 40px;
+  width: 140px;
+  background-color: var(--bg-clr);
+  border: 2.5px solid #1b7e58;
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 5px;
+  cursor: pointer;
 }
